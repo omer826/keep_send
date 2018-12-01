@@ -1,0 +1,173 @@
+@import './email/email.css';
+@import './kepper/kepper.css';
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --home-bg-color: #f7efe5;
+  --routeBox-bg-color: #cd8b69;
+  --routeBox-color-active: black;
+}
+
+@font-face {
+  font-family: Maven Pro;
+  src: url('../lib/fonts/MavenPro-Regular.ttf');
+}
+
+html,
+body {
+  background-color: var(--home-bg-color);
+  margin: 0;
+  padding: 0;
+  font-family: Maven Pro, cursive;
+}
+/* --------------------helper---------------- */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.clean-list {
+  list-style-type: none;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+
+input {
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+a {
+  text-decoration: none;
+}
+
+/* --------------------helper end---------------- */
+
+.loading-gif{
+  width: 30%;
+  position: absolute;
+  left: 50vw;
+}
+.nav-in-pages {
+  height: 50px;
+}
+
+.home-page > div {
+  margin: 10% 0 0 0;
+}
+
+nav {
+  background-image: url('../img/home_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+nav div {
+  padding: 10px;
+}
+nav div a {
+  margin: 0 5px 0 0;
+  color: #80413f;
+  font-size: 1.2em;
+  transition: all 0.3s;
+}
+nav div a:hover {
+  font-size: 1.5em;
+}
+
+.route-box {
+  background-color: var(--routeBox-bg-color);
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+
+.route-box-link{
+  font-size: 2em;
+  color: whitesmoke;
+  transition: all 0.3s;
+}
+.route-box-link:hover {
+  color: #80413f;
+}
+.route-box:hover {
+  font-size: 1.2em;
+  box-shadow: 0 0 12px black;
+}
+.router-link-active {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* button */
+button {
+  background-color: #96584a;
+  border: none;
+  color: #f7efe5;
+  padding: 10px;
+  font-size: 1.1em;
+  transition: box-shadow 0.3s, color 0.3s;
+}
+button:hover:enabled,
+button:active {
+  color: #faf4eb;
+  box-shadow: 0 0 12px 0px black;
+  /* font-size: 1.2em; */
+}
+button:disabled {
+  opacity: 0.4;
+}
+.btn-close {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: #e75447;
+  font-size: 1.3em;
+  padding: 2px;
+}
+.btn-close:hover:enabled {
+  box-shadow: 0 0 12px 0px black;
+  font-size: 1.2em;
+  color: #e75447;
+}
+
+
